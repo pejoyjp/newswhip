@@ -6,6 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import '../style.css'
 
 const MyIconButton = styled(IconButton)({
     color:'rgb(4,251,252)',
@@ -19,7 +20,7 @@ const MyIconButton = styled(IconButton)({
 
 const Header = () => {
     return (
-        <Box sx={{height:{xs:'442px',lg:'522px'},width:'100%',display:'flex',backgroundColor:'rgb(35,31,32)',flexDirection:'column',justifyContent:'space-between',alignItems:'center'}}>
+        <Box sx={{height:{xs:'350px',lg:'450px'},width:'100%',display:'flex',backgroundColor:'rgb(35,31,32)',justifyContent:'center',alignItems:'center'}}>
             <Box sx={{maxWidth:'780px',height:'357px',margin:'10px'}}>
                 <Box sx={{display:'flex',alignItems:'center',color:'rgb(4,251,252)',marginBottom: {
                         xs:'0px',
@@ -70,8 +71,13 @@ const Header = () => {
                         </MyIconButton>
                     </Box>
                 </Box>
-
             </Box>
+            <Box sx={{display:{lg:'block', xs:'none'}
+            }}>
+                <div className="xmasTree"></div>
+            </Box>
+
+
 
         </Box>
     );

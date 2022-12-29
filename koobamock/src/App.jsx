@@ -16,15 +16,6 @@ function App() {
   return (
     <div className="App">
         <AnimatedCursor
-            color="#fff"
-            innerSize={8}
-            outerSize={30}
-            innerScale={1}
-            outerScale={1.7}
-            outerAlpha={0}
-            outerStyle={{
-                border: '3px solid red'
-            }}
         />
         <Navbar open={open} setOpen={setOpen}/>
 
