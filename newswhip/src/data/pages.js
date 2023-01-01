@@ -1,0 +1,1 @@
+export const pages = ['What it’s for','Customer Stories','Products','Resources']
